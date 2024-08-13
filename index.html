@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBD❤️임경민</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function () {
+            let wrapper = $('.wrapper');
+            let lidOne = $('.lid.one');
+            let lidTwo = $('.lid.two');
+            let letter = $('.letter');
+            let seeButton = $('.more_btn');
+            let letterOpen = $('.letter_open');
+            let closeButton = $('.close');
+
+
+            wrapper.click(function () {
+                lidOne.addClass('on');
+                lidTwo.addClass('on');
+                letter.addClass('on');
+                seeButton.delay(800).fadeIn();
+
+            })
+
+
+            seeButton.click(function () {
+                letterOpen.fadeIn();
+                wrapper.fadeOut();
+            })
+
+            closeButton.click(function(){
+                letterOpen.fadeOut();
+                wrapper.fadeIn();
+            })
+        })//script end
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="lid one"></div>
+        <div class="lid two"></div>
+        <div class="envelope"></div>
+        <div class="letter">
+            <p>🌟경 축🌟<br>
+                임경민 탄생일</p>
+        </div>
+        <button class="more_btn">👉🏻more message👈🏻</button>
+    </div>
+
+    <div class="letter_open">
+        <div class="text">
+            <h4>To. 경민</h4>
+            <p>경민아 생일 축하해🎉<br>
+                너의 생일에 사파리 친구들이 함께 모인다니.. 정말 럭키비키자냐🍀<br>
+                오늘 우리 한 번 기깔나게 놀아보자구!
+                세상에서 최고로 행복한 하루로 만들어주겠어😊
+                사룽해~~~❤️‍🔥
+            </p>
+            <h5>From. 정원</h5>
+        </div><!-- .text end -->
+        <button class="close">닫기</button>
+    </div><!-- .letter open end -->
+    </section>
+</body>
+
+</html>
